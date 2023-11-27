@@ -1,0 +1,20 @@
+{
+  "name": "k6-boilerplate",
+  "version": "1.0.0",
+  "description": "This is a test directory",
+  "main": "script.js",
+  "scripts": {
+    "test": "k6 run --config common.json tests/runall.js",
+    "test:smoke": "k6 run --config smoke-config.json tests/smoke.js",
+    "test:soak": "k6 run --config soak-config.json tests/soak.js",
+    "test:stress": "k6 run --config stress-config.json tests/stress.js"
+  },
+  "author": "alvitazwar",
+  "license": "GNU",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "k6-html-reporter": "^1.0.5"
+  }
+}

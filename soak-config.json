@@ -1,0 +1,14 @@
+{
+    "stages": [
+      { "duration": "20s", "target": 1400},
+      { "duration": "30s", "target": 1500},
+      { "duration": "10s", "target": 1000},
+      { "duration": "5s", "target": 2000 }
+    ],
+    "thresholds": { 
+      "http_req_duration": ["avg<100", "p(95)<200","p(98)<100"],
+      "http_req_failed": ["rate<0.01"]
+    
+    },
+    "noConnectionReuse": true
+  }
